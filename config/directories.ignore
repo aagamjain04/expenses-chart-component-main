@@ -1,0 +1,8 @@
+.git/
+config/
+build/
+.idea/
+.gradle/
+filtered_logs.json
+assessment_result.json
+app/chromedriver.log

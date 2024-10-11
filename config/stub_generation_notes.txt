@@ -1,0 +1,22 @@
+1. Replaced is_non_metadata_json() logic to below as assessment json and launch.json wasn't getting parsed correctly
+```
+def is_non_metadata_json(inp_file):
+
+    f_name = inp_file.split('/')[-1]
+
+    return '.json' in f_name and f_name not in ['metadata.json', 'AIS_MO_01.json']
+```
+
+2. To add these comments manually in M3 stubs
+* SLEEP_STMT_05 in T06 missing
+* SLEEP_STMT_07 in closeSizeChart missing
+* SLEEP_STMT_08 in closeSizeChart missing
+* SLEEP_STMT_09 in searchForProduct missing
+* SLEEP_STMT_11 in changeProductQuantityinCart missing
+* SLEEP_STMT_15 in T08 missing
+
+3. Figure out how to tag .gitignore for Module 3 & 4
+- To add "app/src/main/java/QKART_SANITY_LOGIN/QkartSanity.java merge=copy-merge" in M3 onwards?
+app/src/main/java/QKART_SANITY_LOGIN/QkartSanity.java merge=copy-merge
+
+4. src/test/resources/RunResults.xlsx only is needed for Module 6
